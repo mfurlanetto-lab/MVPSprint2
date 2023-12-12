@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/home_logo.png" type="image/png">
+    <title> AI Empregados - Machine Learning</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="box-img-header">
+            <div id="logo_container">
+                <img class="img_logo" src="./img/home_logo.png" alt="LOGO" width="40" height="40"
+                    title="Machine Learning">
+            </div>
+            <div class="title">
+                <h2>Estudo de Machine Learning</h2>
+                <br>
+                <p>Este sistema foi desenvolvido para dar uma previsão de retenção de talento.</p>
+                <p>Para isso, basta preencher os campos abaixo com os dados do empregado e clicar em "Prever".</p>
+            </div>
+        </div>
+    </header>
+    <br>
+
+    <form id="formulario">
+        <label for="dados_entrada">Dados do Empregado:</label>
+        <p></p>
+        <label for="education">Grau de Educação:</label>
+        <select id="education" name="education" required>
+            <option value="" disabled selected></option>
+            <option value="1">Bacharelado</option>
+            <option value="2">Mestrado</option>
+            <option value="3">PhD</option>
+        </select>
+        <label for="joiningYear">Ano de Admissão:</label>
+        <input type="text" id="joiningYear" name="joiningYear" placeholder="AAAA" required>
+        <label for="paymentTier">Nível salarial:</label>
+        <select id="paymentTier" name="paymentTier" required>
+            <option value="" disabled selected></option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <label for="age">Idade:</label>
+        <input type="text" id="age" name="age" required>
+        <label for="gender">Gênero:</label>
+        <select id="gender" name="gender" required>
+            <option value="" disabled selected></option>
+            <option value="1">Masculino</option>
+            <option value="2">Feminino</option>
+        </select>
+        <label for="everBenched">Já esteve sem alocação no trabalho:</label>
+        <select id="everBenched" name="everBenched" required>
+            <option value="" disabled selected></option>
+            <option value="1">Sim</option>
+            <option value="0">Não</option>
+        </select>
+        <label for="experienceInCurrentDomain">Experiência na função atual:</label>
+        <select id="experienceInCurrentDomain" name="experienceInCurrentDomain" required>
+            <option value="" disabled selected></option>
+            <option value="1">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+        </select>
+
+        <button type="button" onclick="realizarPrevisao()">Prever</button>
+
+    </form>
+    <h4>Estimativa</h4>
+    <p id="leaveOrNot"></p>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
