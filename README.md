@@ -1,4 +1,4 @@
-# MVPSprint2
+# Machine Learning - Sistema para retenção de talentos - Sprint2
 
 Este repositório contém o MVP entregue na sprint 2 do curso de Engenharia de Software da PUC RJ.
 
